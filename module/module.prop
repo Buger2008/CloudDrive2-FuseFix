@@ -1,0 +1,6 @@
+id=clouddrive2_fuse_fix
+name=CloudDrive2 FUSE 挂载修复
+version=V1.1
+versionCode=2
+author=Buger
+description=SELinux 默认禁止 untrusted_app 读写 /dev/fuse，导致 CloudDrive2 挂载报 IO Permission denied(error 13)。本模块放行 allow untrusted_app fuse_device chr_file { read write }，保持 SELinux 强制模式，不影响银行类检测 App。

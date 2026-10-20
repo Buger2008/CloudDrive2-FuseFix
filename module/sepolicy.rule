@@ -1,0 +1,1 @@
+allow untrusted_app fuse_device chr_file { read write }

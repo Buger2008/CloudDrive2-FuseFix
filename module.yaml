@@ -1,0 +1,14 @@
+schemaVersion: 1
+id: clouddrive2_fuse_fix
+name: CloudDrive2 FUSE 挂载修复
+summary: 放行 untrusted_app 读写 /dev/fuse，修复 CloudDrive2 在安卓上挂载网盘报 IO Permission denied(error 13)，保持 SELinux 强制模式。
+description: README.md
+support: https://github.com/Buger2008/CloudDrive2-FuseFix/issues
+tags: [clouddrive2, fuse, selinux, mount]
+
+authors:
+  - name: Buger
+    url: https://github.com/Buger2008
+
+release:
+  assetPattern: "clouddrive2_fuse_fix-*.zip"
